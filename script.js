@@ -12,14 +12,14 @@ fetch("	https://open.er-api.com/v6/latest/USD", {
     console.log(result);
     this.lastUpdate = result.time_last_update_utc;
 
-    console.log(lastUpdate);
+    // console.log(lastUpdate);
     // console.log(this.nextUpdate);
     element.textContent = lastUpdate;
-    console.log(element.textContent);
+    // console.log(element.textContent);
   });
 
 let elementtva = document.querySelector("#firstMablagh");
-console.log(elementtva.value);
+// console.log(elementtva.value);
 let firstseksiffran = document.querySelector("#maininformationp");
 
 elementtva.addEventListener("input", () => {
@@ -30,15 +30,14 @@ firstseksiffran.textContent = elementtva.value;
 // console.log(firstseksiffran.textContent);
 
 let z = 3100;
-console.log(z);
 
 let sistamablagh = document.querySelector("#sistamablagh");
 
 elementtva.addEventListener("input", () => {
   let x = elementtva.value * z;
-  console.log(x);
+
   let y = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-  console.log(y);
+
   sistamablagh.textContent = y;
 });
 
