@@ -33,7 +33,13 @@ let z = 3100;
 console.log(z);
 
 let sistamablagh = document.querySelector("#sistamablagh");
+
 elementtva.addEventListener("input", () => {
-  sistamablagh.textContent = elementtva.value * z;
+  let x = elementtva.value * z;
+  console.log(x);
+  let y = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  console.log(y);
+  sistamablagh.textContent = y;
 });
+
 // console.log(elementtva.value * z);
