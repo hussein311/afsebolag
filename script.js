@@ -29,7 +29,7 @@ elementtva.addEventListener("input", () => {
 firstseksiffran.textContent = elementtva.value;
 // console.log(firstseksiffran.textContent);
 
-let z = 3120;
+let z = 3100;
 
 let sistamablagh = document.querySelector("#sistamablagh");
 let x = elementtva.value * z;
