@@ -32,6 +32,9 @@ firstseksiffran.textContent = elementtva.value;
 let z = 3120;
 
 let sistamablagh = document.querySelector("#sistamablagh");
+let x = elementtva.value * z;
+let y = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+sistamablagh.textContent = y;
 
 elementtva.addEventListener("input", () => {
   let x = elementtva.value * z;
